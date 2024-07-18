@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="splash-screen" class="splash-screen">
+        <img src="./assets/images/canva-logo.webp" class="splash-icon" alt="">
+        <p>App Name</p>
+    </div>
+    <nav>
+        <img class="only-mobile" onclick="menuOn()" id="menu-icon" src="./assets/images/menu.png" alt="">
+        <!-- <h4 class="only-mobile" class="title">ExamBash</h4> -->
+        <h4 class="title">ExamBash</h4>
+      <div class="menu">
+        <div class="menu-details only-mobile">
+            <img src="/assets/images/canva-logo.webp"  class="menu-logo" alt="">
+            <h3>EXAMBASH</h3>
+            <p>Student Name: name</p>
+        </div>
+        <div class="close-menu" onclick="menuOff()">
+            <img id="close-menu-btn" class="only-mobile in-menu-icon" src="/assets/images/menu.png" alt="">
+        </div>
+        <ul>
+            <li>
+                <img class="only-mobile in-menu-icon" src="/assets/images/menu.png" alt="">
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <img class="only-mobile in-menu-icon" src="/assets/images/menu.png" alt="">
+                <a href="#">Practice</a>
+            </li>
+            <li>
+                <img class="only-mobile in-menu-icon" src="/assets/images/menu.png" alt="">
+                <a href="#">Test</a>
+            </li>
+            <li>
+                <img class="only-mobile in-menu-icon" src="/assets/images/menu.png" alt="">
+                <a href="#">Competition</a>
+            </li>
+            <li>
+                <img class="only-mobile in-menu-icon" src="/assets/images/menu.png" alt="">
+                <a href="#">Setting</a>
+            </li>
+            <li>
+                <img class="only-mobile in-menu-icon" src="/assets/images/menu.png" alt="">
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <img class="only-mobile in-menu-icon" src="/assets/images/menu.png" alt="">
+                <a href="#">User Guide</a>
+            </li>
+            <li>
+                <img class="only-mobile in-menu-icon" src="/assets/images/menu.png" alt="">
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+      </div>
+
+
+    </nav>
+
+    <section class="top-section p-20-40 flex-box">
+        <div class="banner ">
+            <h2>Level Up</h2>
+        </div>
+    </section>
+<section class="competition-section">
+    <h2>Competition</h2>
+    <div class="competition-list">
+        <a href="#"><img class="competition-box" src="/assets/images/demo.png" alt=""></a>
+        <a href="#"><img class="competition-box" src="/assets/images/demo.png" alt=""></a>
+        <a href="#"><img class="competition-box" src="/assets/images/demo.png" alt=""></a>
+        <a href="#"><img class="competition-box" src="/assets/images/demo.png" alt=""></a>
+        <a href="#"><img class="competition-box" src="/assets/images/demo.png" alt=""></a>
+        <a href="#"><img class="competition-box" src="/assets/images/demo.png" alt=""></a>
+    </div>
+
+</section>
+
+
+
+<section class="bottom-nav only-mobile">
+    <div class="nav-box active">
+        <img src="/assets/images/menu.png" alt="">
+        <p>Home</p>
+    </div>
+    <div class="nav-box">
+        <img src="/assets/images/menu.png" alt="">
+        <p>Book</p>
+    </div>
+    <div class="nav-box">
+        <img src="/assets/images/menu.png" alt="">
+        <p>Test</p>
+    </div>
+    <div class="nav-box">
+        <img src="/assets/images/menu.png" alt="">
+        <p>Store</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+<script type="text/javascript">
+
+function loader(){
+    window.addEventListener("load",
+    setTimeout(()=>{ document.getElementById("splash-screen").classList.add("di-none");},2000)
+  )
+  }
+  loader();
+
+function menuOn(){
+    document.querySelector(".menu").classList.add("on-menu")
+    console.log("working")
+}
+function menuOff(){
+    document.querySelector(".menu").classList.remove("on-menu");
+}
+</script>
+</body>
+</html>
